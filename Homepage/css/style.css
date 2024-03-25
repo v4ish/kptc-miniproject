@@ -77,12 +77,25 @@ section {
   text-align: center;
   font-size: 1.8rem;
   text-transform: capitalize;
+  border-radius: 4px;
 }
 
 .btn:hover,
 .inline-btn:hover {
   background-color: var(--black);
   transition: 0.5s;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  border: #17b4df solid;
+  padding: 30px;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 .btn {
@@ -137,6 +150,10 @@ section {
   margin-right: 1rem;
 }
 
+.header .navbar .flex .logo:hover {
+  filter: hue-rotate(280deg);
+}
+
 .header .navbar .flex ul {
   list-style: none;
 }
@@ -181,6 +198,7 @@ section {
 .header .navbar .flex ul li:hover ul li a {
   display: block;
   transition: 0.3s;
+  border-radius: 2px;
 }
 
 #menu-btn {
@@ -207,6 +225,7 @@ section {
   padding: 2rem;
   box-shadow: var(--box-shodow);
   width: 50rem;
+  border-radius: 5px;
 }
 
 .home .center form h3 {
@@ -257,12 +276,15 @@ section {
 .services .box-container .box {
   background-color: var(--white);
   box-shadow: var(--box-shodow);
+  color: black;
   padding: 2rem;
   text-align: center;
+  border-radius: 5px;
 }
 .services .box-container .box:hover {
-  background-color: var(--light-bg);
+  color: white;
   transition: 0.4s;
+  filter: invert(85%);
 }
 
 .services .box-container .box img {
@@ -273,7 +295,7 @@ section {
 .services .box-container .box h3 {
   font-size: 2rem;
   padding: 1rem 0;
-  color: var(--black);
+  color: black;
   text-transform: capitalize;
 }
 
